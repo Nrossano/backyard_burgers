@@ -1,0 +1,118 @@
+/* Backyard burgers stylesheet - nick rossano - 1/9/19 */
+
+body {
+	font-size: 15px;
+}
+
+h3 {
+	font-family: 'Rock Salt', sans-serif;
+	font-size: 26px;
+	font-weight: bolder;
+}
+
+#home {
+	margin-top: 93px;
+}
+
+.learn-more {
+	background-color: black;
+	color: #ff9f35;
+	padding-top: 15px;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Rubik';
+	font-size: 16px;
+}
+
+.learn-more a {	
+	font-weight: bolder;
+	text-decoration: none;
+	text-shadow: none;
+	transition: text-shadow 1s, color 1s;
+	font-size: 14px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.learn-more a:hover {
+	color: #ed5f13;
+	text-shadow: red 2px 2px 2px;
+}
+
+.jumbotron {
+	background-image: url(../images/burgers.jpg);
+	color: #ed5f13;
+	background-color: #585859;
+	height: 900px;
+	margin-bottom: 20px;
+	background-size: cover;
+	border-radius: 0;
+}
+
+#mainTitle {
+	position: relative;
+	bottom: 75px;
+	left: 570px;
+	font-size: 82px;
+	text-shadow: black 3px 3px 5px;
+	font-family: 'Permanent Marker', sans-serif;
+}
+
+#mainTitle2 {
+	position: relative;
+	bottom: 75px;
+	left: 570px;
+	font-size: 29px;
+	text-shadow: black 2px 2px 2px;
+	font-family: 'Bowlby One', sans-serif;
+}
+
+/*Mobile Styles*/
+@media only screen and (max-width: 481px) {
+    #home {
+      margin-top: 0px;
+   }
+}
+
+/*Tablet Styles*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #home {
+    margin-top: 177px;
+  }
+
+  #learn {
+  	margin-top: 75px;
+  }
+
+  #order {
+  	margin-top: 42px;	
+  }
+  #para4 {
+  	margin-bottom: 10px;
+  }
+ }
+
+ /*Big Tablet Styles*/
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
+	#home {
+		margin-top: 152px;
+	}
+
+	#para5 {
+		margin-bottom: 40px;
+	}
+
+	#para4 {
+		margin-bottom: 70px;
+	}
+}
+
+/*Desktop Styles*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #home {
+     	margin-bottom: 100px;
+    }
+
+    .home2 {
+		margin-top: 18px;
+	}
+ }

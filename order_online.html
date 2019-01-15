@@ -1,0 +1,176 @@
+<!-- Order online/build your own burger form-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="images/icon.png"/>
+	<title>BYB - Order Online</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <!--Google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Bowlby+One|Orbitron|Permanent+Marker|Rock+Salt|Rubik|Shrikhand" rel="stylesheet">
+   <!--Local styles-->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/order.css">
+   <!--Form submit JS-->
+   <script src="javascript/form.js"></script>
+</head>
+
+<body>
+   <div class="learn-more">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h3>Home</h3>
+					<p id="home"><a href="index.html">Back to home page</a></p>
+				</div>
+				<div class="col-md-3">
+					<h3>Grand Opening</h3>
+					<p>Opening on March 1st, 2019. Come in during our first week for a buy one get one free burger!</p>
+					<p class="home2"><a href="grand_opening.html">Click here for more information</a></p>
+				</div>
+
+				<div class="col-md-3">
+					<h3>Menu</h3>
+					<p id="para4">Calories, health, and nutritional facts about our healthy and tasty burgers.</p>
+					<p class="home2"><a href="menu.html">Click here to learn more</a></p>
+				</div>
+
+				<div class="col-md-3">
+					<h3>Order Online</h3>
+					<p id="para5">Build your own burger and order online! Delivery and pickup available.</p>
+					<p class="home2"><a href="order_online.html">Click here to order</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<form id="order" method="post">
+         <fieldset id="orderForm">
+            <legend>Build your own burger</legend>
+
+            <div class="formRow">
+               <label for="meat">Meat</label>
+               <br>
+               <select>
+                  <option>Beef</option>
+                  <option>Chicken</option>   
+                  <option>Veggie</option>
+               </select>
+            <div class="formRow">
+               <label for="meatNum">Number of patties</label>
+               <br>
+               <input name="patty" id="patty" type="number" value="1" step="1" min="1" max="3">
+            </div>
+            
+            <div class="formRow">
+               <label for="bread">Bread</label>
+               <br>
+               <select>
+                  <option>Potato bun</option>
+                  <option>Preztel bun</option>   
+                  <option>Gluten free</option>
+               </select>
+            </div>
+
+            <div class="formRow">
+               <label for="cheese">Cheese</label>
+               <br>
+               <select>
+                  <option>None</option>
+                  <option>American</option>
+                  <option></option>
+                  <option>Mozzarella</option>
+               </select>
+            </div>
+
+            <div class="formRow">
+               <label for="temp">Temperature</label>
+               <br>
+               <select>
+                  <option>Medium</option>
+                  <option>Medium well</option>   
+                  <option>Well Done</option>
+                  <option>Medium Rare</option>
+               </select>
+            </div>
+
+            </div>
+            <br>
+            <h2>Toppings</h2>
+            <p>Lettuce, tomato, onion, pickle and ketchup included free of charge</p>
+
+            <input type="checkbox" name="topping" id="bacon">
+            <label>Bacon</label>
+            <br>
+
+            <input type="checkbox" name="topping" id="mush">
+            <label>Mac N' Cheese</label>
+            <br>
+
+            <input type="checkbox" name="topping" id="egg">
+            <label>Fried Egg</label>
+            <br>
+      </form>
+
+         <form id="order2">
+         </fieldset>
+
+         <fieldset id="orferInfo">
+            <legend id="title">Order Information</legend>
+
+            <div class="formRow">
+            <label class="order3">Order Type</label>
+            <br>
+               <select class="order3">
+                  <option value="md">Delivery</option>
+                  <option value="mdw">Pickup</option>
+               </select>
+            </div>
+         </div>
+
+         <div class="formRow">
+               <label for="name" class="order3">Name*</label>
+               <br>
+               <input type="text" name="custName" id="name" placeholder="First and last name" required class="order3">
+            </div>
+
+            <div class="formRow">
+               <label for="street" class="order3">Street Address*</label>
+               <br>
+               <input type="text" name="custStreet" id="street" required class="order3">
+            </div>
+
+            <div class="formRow">
+               <label for="city" class="order3">City*</label>
+               <br>
+               <input type="text" name="custCity" id="city" required class="order3">
+            </div>
+
+            <div class="formRow">
+               <label for="state" class="order3">State*</label>
+               <br>
+               <input type="text" name="custState" id="state" value="NY" maxlength="2" required class="order3">
+            </div>
+
+            <div class="formRow">
+               <label for="zip" class="order3">Postal Code*</label>
+               <br>
+               <input type="text" name="custZip" id="zip" placeholder="nnnnn" pattern="^\d{5}(-\d{4})?$" required class="order3">
+            </div>
+
+            <div class="formRow" class="order3">
+               <label for="phone" class="order3">Phone Number*</label>
+               <br>
+               <input type="tel" name="custPhone" id="phone" placeholder="(nnn)nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required class="order3">
+            </div>
+            <br>
+         </fieldset>
+
+         <div id="buttons" class="buttons">
+            <input type="submit" value="Submit Order" id="submit">
+            <input type="reset" value="Cancel">
+         </div>
+      </form>
+</body>
+</html>

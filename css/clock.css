@@ -1,0 +1,227 @@
+/*Stylesheet for grand_opening.html countdown clock*/
+
+ h1 {
+  text-align: center;
+  color: #ed5f13;
+  font-size: 70px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-family: "Permanent Marker", sans-serif;
+}
+
+h4 {
+  text-align: center;
+  color: #ed5f13;
+  padding-bottom: 50px;
+  font-size: 55px;
+  font-family: "Shrikhand", sans-serif;
+}
+
+#para2 {
+  color: #ff9f35;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-image: url(../images/bg.jpg);
+  background-color: #585859;
+}
+
+/* Clock styles */
+.countdown {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-right: 14px;
+}
+
+.countdown .timeel {
+  display: inline-block;
+  padding: 10px;
+  background: #151515;
+  margin: 0;
+  color: white;
+  min-width: 6.6rem;
+  margin-left: 13px;
+  border-radius: 10px 0 0 10px;
+  background-color: black;
+  font-size: 76px;
+  font-family: sans-serif;
+}
+
+.countdown span[class*="timeRef"] {
+  border-radius: 0 10px 10px 0;
+  margin-left: 0;
+  background-color: #ff9f35;
+  color: black;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 47%;
+  height: 47%;
+  display: inline-block;
+  float: right;
+}
+
+map {
+  float: right;
+  display: inline-block;
+}
+
+/*Mobile Styles */
+@media only screen and (max-width: 481px) {
+    h1 {
+      font-size: 45px;
+    }
+
+    h4 {
+      font-size: 35px;
+    }
+
+    .countdown .timeel {
+      font-size: 40px;
+    } 
+
+    br {
+      
+    }
+
+    img {
+      display: none;
+    }
+
+    html {
+      overflow-x: hidden;
+    }
+  }
+
+/*Tablet Styles*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    h1 {
+      font-size: 85px;
+    }
+    
+    h4 {
+      font-size: 55px;
+    }
+
+    .countdown .timeel {
+      font-size: 63px;
+    }
+
+    .countdown {
+      margin: 0px;
+    }
+
+    #para4 {
+      margin-bottom: 49px;
+    }
+
+    #para5 {
+      margin-bottom: 42px;
+    }
+
+    img {
+      display: none;
+    }
+
+    #map {
+      margin-left: 84px;
+    }
+
+    #br2 {
+      display: none;
+    }
+}
+
+/*Big Tablet Styles*/
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
+  img {
+    display: none;
+  }
+
+  #map {
+    margin-left: 210px;
+  }
+  
+  .countdown .timeel {
+    font-size: 93px;
+  }
+
+  #hrs {
+    margin-right: 250px;
+  }
+
+  #days {
+    margin-left: 100px;
+  }
+
+  #secs2 {
+    margin-right: 100px;
+  }
+}
+
+/*Desktop Styles*/
+@media only screen and (min-width: 769px) {
+    h1 {
+      text-align: center;
+      color: #ed5f13;
+      font-size: 70px;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      text-align: center;
+      color: #ed5f13;
+      padding-bottom: 50px;
+      font-size: 55px;
+      font-weight: bolder;
+    }
+
+    #para2 {
+      color: #ff9f35;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    body {
+      background-color: #585859;
+    }
+
+    /* Clock styles */
+    .countdown {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-right: 14px;
+    }
+    .countdown .timeel {
+      display: inline-block;
+      padding: 10px;
+      background: #151515;
+      margin: 0;
+      color: white;
+      min-width: 6.6rem;
+      margin-left: 13px;
+      border-radius: 10px 0 0 10px;
+      background-color: black;
+      font-size: 76px;
+    }
+    .countdown span[class*="timeRef"] {
+      border-radius: 0 10px 10px 0;
+      margin-left: 0;
+      background-color: #ff9f35;
+      color: black;
+      margin-bottom: 50px;
+    }
+
+    br {
+      display: none;
+    }
+    .col-md-3 {
+      position: relative;
+      left: 8px;
+  }
+}

@@ -1,0 +1,288 @@
+/* Stylesheet for index.html - home page*/
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+h4 {
+  background-color: black;
+  text-align: center;
+  color: #ed5f13;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 36px;
+}
+
+#twt {
+  position: absolute;
+  top: 88%;
+  left: 78%;
+  -webkit-filter: drop-shadow(8px 8px 4px black);
+  filter: drop-shadow(8px 8px 4px black);
+  animation: pulse 1s infinite;
+}
+
+#fb {
+  position: absolute;
+  top: 88%;
+  left: 84%;
+  -webkit-filter: drop-shadow(8px 8px 4px black);
+  filter: drop-shadow(8px 8px 4px black);
+  animation: pulsef 1s infinite;
+}
+
+#inst {
+  position: absolute;
+  top: 88%;
+  left: 90%;
+  -webkit-filter: drop-shadow(8px 8px 4px black);
+  filter: drop-shadow(8px 8px 4px black);
+  animation: pulsei 1s infinite;
+}
+
+#cont {
+  position: absolute;
+  top: 80%;
+  left: 78%;
+  font-size: 38px;
+  text-shadow: black 2px 2px 2px;
+  font-family: 'Bowlby One', cursive;
+  color: yellow;
+}
+
+/*Pulsing animation for social media icons*/
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(29, 161, 242, 0.4);
+    box-shadow: 0 0 0 0 rgba(29, 161, 242, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(29, 161, 242, 0);
+      box-shadow: 0 0 0 10px rgba(29, 161, 242, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(29, 161, 242, 0);
+      box-shadow: 0 0 0 0 rgba(29, 161, 242, 0);
+  }
+}
+
+@keyframes pulsef {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(59, 89, 152, 0.4);
+    box-shadow: 0 0 0 0 rgba(59, 89, 152, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(59, 89, 152, 0);
+      box-shadow: 0 0 0 10px rgba(59, 89, 152, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(59, 89, 152, 0);
+      box-shadow: 0 0 0 0 rgba(59, 89, 152, 0);
+  }
+}
+
+@keyframes pulsei {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(250, 28, 87, 0.4);
+    box-shadow: 0 0 0 0 rgba(250, 28, 87, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(250, 28, 87, 0);
+      box-shadow: 0 0 0 10px rgba(250, 28, 87, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(250, 28, 87, 0);
+      box-shadow: 0 0 0 0 rgba(250, 28, 87, 0);
+  }
+}
+
+
+
+/*Mobile Styles*/
+@media only screen and (max-width: 481px) {
+    .learn-more{
+      height: 900px;
+      width: 100%;
+   }
+
+   #home2 {
+    margin-top: 0px;
+   }
+
+   html {
+    background-color: black;
+   }
+
+   body {
+    background-color: black;
+   }
+
+   h3 {
+    margin-bottom: 5px;
+   }
+
+   h4 {
+    margin-top: 5px;
+   }
+
+   .sm2 {
+    height: 25%;
+    width: 25%;
+    -webkit-filter: drop-shadow(3px 3px 5px gray);
+    filter: drop-shadow(3px 3px 5px gray);
+   }
+
+   #twt2 {
+    position: relative;
+    right: 30px;
+    top: 1px;
+   }
+
+   #fb2 {
+    position: relative;
+   }
+
+   #inst2 {
+    position: relative;
+    left: 30px;
+   }
+
+   #cont {
+    display: none;
+   }
+
+   p {
+    font-size: 15px;
+   }
+
+   .sm {
+    display: none;
+   }
+
+}
+
+/*Tablet Styles*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: black;
+  }
+
+  #mainTitle {
+    position: relative;
+   bottom: 75px;
+   left: 1px;
+   font-size: 76px;
+  }
+
+  #mainTitle2 {
+   position: relative;
+   bottom: 55px;
+   left: 1px;
+   font-size: 45px;
+  }
+
+  h4 {
+    display: none;
+  }
+
+  #para4 {
+    margin-bottom: 49px;
+  }
+
+  #para5 {
+    margin-bottom: 42px;
+  }
+
+  #twt {
+    position: absolute;
+    top: 88%;
+    left: 63%;
+  }
+
+  #fb {
+    position: absolute;
+    top: 88%;
+    left: 75%;
+  }
+
+  #inst {
+    position: absolute;
+    top: 88%;
+    left: 87%;
+  }
+
+  .sm2 {
+    display: none;
+  }
+
+  #cont {
+    position: absolute;
+    top: 82%;
+    left: 64%;
+    font-size: 38px;
+  }
+}
+
+/*Big Tablet Styles*/
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
+  #mainTitle {
+    position: relative;
+    left: -30px;
+  }
+
+  #mainTitle2 {
+    position: relative;
+    left: -30px;
+  }
+
+  #twt {
+    position: absolute;
+    top: 88%;
+    left: 63%;
+  }
+
+  #fb {
+    position: absolute;
+    top: 88%;
+    left: 75%;
+  }
+
+  #inst {
+    position: absolute;
+    top: 88%;
+    left: 87%;
+  }
+
+  .sm2 {
+    display: none;
+  }
+
+  #cont {
+    position: absolute;
+    top: 82%;
+    left: 64%;
+    font-size: 38px;
+  }
+
+  .jumbotron {
+    height: 1130px;
+  }
+}
+
+
+
+/*Desktop Styles*/
+@media only screen and (min-width: 769px) {
+  h4 {
+    display: none;
+   }
+
+   .sm2 {
+    display: none;
+   }
+}
